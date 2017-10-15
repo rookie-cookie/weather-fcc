@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local Weather Map</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- weather icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="wrapper clearfix">
+      <div class="container weather-body">
+        <div id="weather-title">
+          <h3>Weather Report <i class="fa fa-map-marker" aria-hidden="true"></i> </h3>
+        </div>
+        <div class="weather-info">
+
+          <div class='row'>
+            <div class="col-sm-3">
+              <div id="dispIcon"></div>
+            </div>
+            <div class="desc col-sm-9">
+              <div id="dispLocation"></div>
+              <div id="dispDate"></div>
+              <div>
+                <span id="dispDescription"></span>
+                <span id="dispTime"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-10">
+              <div id="dispTemp"></div>
+            </div>
+            <div class="col-sm-2">
+              <div class="btn" id="convertC">C</div>
+              <div class="btn" id="convertF">F</div>
+            </div>
+          </div>
+
+          <div id="dispHumidity"></div>
+          <div id="dispWind"></div>
+
+        </div>
+      </div>
+      <!-- end of wrapper -->
+      <div class="container footer">
+        <p>A Free Code Camp Project</p>
+        <p>Made by Jona Reyes</p>
+      </div>
+    </section>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- custom -->
+    <script type="text/javascript" src="js/weather.js"></script>
+  </body>
+</html>
